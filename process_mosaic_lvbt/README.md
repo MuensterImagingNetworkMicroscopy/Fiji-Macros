@@ -21,8 +21,8 @@ The macro expects filenames in the following structure:
 
 ```
 18-07-29_20260505_21461_PMT - PMT [P_1] [XX x XX]_C00_xyz-Table Z0000.ome.tif
-                                         └──────┘  └─┘              └──┘
-                                       Mosaic pos  Ch              Z index
+                                        └──────┘  └─┘            └──┘
+                                       Mosaic pos  Ch           Z index
 ```
 
 | Token | Example | Description |
