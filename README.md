@@ -11,6 +11,7 @@ The macros in this repository were created for specific imaging workflows and an
 | Macro | Description |
 |---|---|
 | [Object-Based Colocalization Analyzer](./object-based-coloc/) | 2D object-based colocalization analysis for two-channel fluorescence images. Single image and batch processing. |
+| [Process Imspector Mosaics](./process_mosaic_lvbt/) | Processes mosaic, z-stack OME-TIFF files (TrimScope, LVBT) and stitches them using the Grid/Collection Stitching Plugin. |
 
 *More macros will be added over time.*
 
