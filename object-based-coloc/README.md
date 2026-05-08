@@ -1,6 +1,6 @@
 # Object-Based Colocalization Analyzer
 
-**Version 2.0 · Münster Imaging Network**  
+**Version 1.0 · Münster Imaging Network**  
 A Fiji/ImageJ macro for **2D object-based** two-channel colocalization analysis.  
 Supports both single image and batch processing.
 
