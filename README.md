@@ -32,7 +32,7 @@ Refer to the individual README for installation and usage instructions.
 All macros are licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).  
 You are free to use, modify, and redistribute them – please give credit:
 
-> Dr. Thomas Zobel, Münster Imaging Network – https://uni.ms/imagingnetwork
+> Macro Author, Münster Imaging Network – https://uni.ms/imagingnetwork
 
 ---
 
