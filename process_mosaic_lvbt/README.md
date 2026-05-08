@@ -128,7 +128,7 @@ Output directory/
 
 ## Notes & Tips
 
+- Providing channel names and voxel sizes is a lazy workaround for non-read metadata from the schema.
 - Channel names must be entered **in acquisition order** (matching `C00`, `C01`, …). If fewer names than channels are provided, remaining channels are labelled `C0`, `C1`, etc.
-- Tile overlap should match the value set during acquisition. If unknown, `10–20 %` is a safe starting point.
-- The macro uses **backslash** as the path separator for Windows compatibility. On macOS/Linux, paths with forward slashes are handled automatically by Fiji.
+- Tile overlap should match the value set during acquisition. 
 - All open images are closed after saving to keep memory usage low during batch runs.
