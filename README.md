@@ -10,7 +10,7 @@ The macros in this repository were created for specific imaging workflows and an
 
 | Macro | Description |
 |---|---|
-| [Object-Based Colocalization Analyzer](./Object-Based-Colocalization/) | 2D object-based colocalization analysis for two-channel fluorescence images. Single image and batch processing. |
+| [Object-Based Colocalization Analyzer](./object-based-coloc/) | 2D object-based colocalization analysis for two-channel fluorescence images. Single image and batch processing. |
 
 *More macros will be added over time.*
 
