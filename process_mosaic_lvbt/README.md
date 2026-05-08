@@ -27,7 +27,6 @@ The macro expects filenames in the following structure:
 
 | Token | Example | Description |
 |---|---|---|
-| `[P_1]` | `[P_1]` | Acquisition position tag (ignored) |
 | `[XX x XX]` | `[00 x 01]` | Mosaic tile position (grid X · Y) |
 | `_C00` | `_C00`, `_C01` | Channel index (zero-based) |
 | `Z0000` | `Z0000`–`Z0017` | Z-slice index (zero-based) |
