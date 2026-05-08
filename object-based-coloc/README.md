@@ -16,8 +16,8 @@ Supports both single image and batch processing.
 ## Installation
 
 **Option A – Drag & Drop**
-1. Download `coloc_macro.ijm`
-2. Drag and drop the file into the Fiji window and click **Run**
+1. Download [MIN_object-based-coloc_v1-0.ijm](MIN_object-based-coloc_v1-0.ijm)
+3. Drag and drop the file into the Fiji window and click **Run**
 
 **Option B – Menu**
 1. In Fiji: **Plugins › Macros › Install...** and select the file
