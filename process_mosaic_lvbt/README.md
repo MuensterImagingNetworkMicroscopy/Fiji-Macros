@@ -43,11 +43,6 @@ The macro expects filenames in the following structure:
 1. In Fiji: **File › New › Script...** or open an existing script
 2. Paste or open the `.ijm` file and click **Run**
 
-**Option C – Permanent Installation**
-1. Copy `ProcessImspector_mosaic_v1.ijm` to your Fiji `plugins/` folder  
-   (e.g. `Fiji.app/plugins/Macros/`)
-2. Restart Fiji — the macro will appear under **Plugins › Macros** in the menu bar
-
 ---
 
 ## Step-by-Step Guide
