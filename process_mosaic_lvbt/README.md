@@ -57,7 +57,7 @@ When launched, a dialog prompts for all required settings:
 | `Output directory` | — | Folder where processed tiles and stitched result are saved |
 | `File suffix` | `.ome.tif` | File extension filter |
 | `Tile overlap` | `20` | Overlap in % used for stitching |
-| `Channel names` | `DAPI, GFP` | Comma-separated names in acquisition order |
+| `Channel names` | `DAPI,GFP` | Comma-separated names in acquisition order |
 | `Pixel size (xy)` | `0.534` | Lateral pixel size in µm |
 | `Pixel size (z)` | `3` | Axial voxel depth in µm |
 | `Perform stitching?` | `true` | Check to run Grid/Collection Stitching after tile export |
