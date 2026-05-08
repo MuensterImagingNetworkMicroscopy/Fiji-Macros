@@ -64,11 +64,11 @@ if (!isOpen("ROI Manager")) run("ROI Manager...");
 setBackgroundColor(0, 0, 0);
 setForegroundColor(255, 255, 255);
 
-print("═══════════════════════════════════════════════");
+print("-----------------------------------------------");
 print("   Object-Based Colocalization Analyzer  v1.0");
 print("   Dr. Thomas Zobel · Münster Imaging Network");
 print("   uni.ms/imagingnetwork");
-print("═══════════════════════════════════════════════\n");
+print("-----------------------------------------------\n");
 
 
 // ─── Step 1: Mode selection ───────────────────────────────────────────
@@ -77,7 +77,7 @@ Dialog.create("Step 1 of 4  –  Mode & Settings");
 Dialog.addMessage(
     "Object-Based Colocalization Analyzer\n" +
     "Münster Imaging Network  ·  uni.ms/imagingnetwork\n" +
-    "─────────────────────────────────────────────");
+    "-----------------------------------------------");
 Dialog.addRadioButtonGroup("Processing mode:", mode_items, 2, 1, "Single Image");
 Dialog.addMessage(" ");
 Dialog.addCheckbox("Load settings from a previous run  (*_Settings.txt)", false);
@@ -143,23 +143,23 @@ Dialog.addMessage(
     "Select filters to apply before thresholding.\n" +
     "Applied to working copies only – originals are preserved.\n" +
     "Order: Rolling Ball > Top-Hat > Median > Gaussian.");
-Dialog.addMessage("────  Background Subtraction  ─────────────────────");
+Dialog.addMessage("----  Background Subtraction  ----");
 Dialog.addCheckbox("Rolling Ball Background Subtraction", do_rb);
 Dialog.addNumber("  Radius (px):", rb_r);
-Dialog.addMessage("────  Structure Enhancement  ───────────────────────");
+Dialog.addMessage("----  Structure Enhancement  ----");
 Dialog.addCheckbox("Top-Hat Filter  (highlights small bright structures)", do_tophat);
 Dialog.addNumber("  Radius (px):", tophat_r);
 Dialog.addMessage(
     "  White Top-Hat = Image - Morphological Opening\n" +
     "  Opening = Erosion (Min filter) + Dilation (Max filter)");
-Dialog.addMessage("────  Noise Reduction  ─────────────────────────────");
+Dialog.addMessage("---- Noise Reduction  ----");
 Dialog.addCheckbox("Median Filter", do_median);
 Dialog.addNumber("  Radius (px):", med_r);
 Dialog.addCheckbox("Gaussian Blur", do_gaussian);
 Dialog.addNumber("  Sigma (px):", gauss_s);
 if (!isBatch)
     Dialog.addMessage(
-        "────────────────────────────────────────────────────\n" +
+        "-----------------------------------------------\n" +
         "After these filters you can apply additional manual\n" +
         "filters before thresholding (Single mode only).");
 Dialog.show();
@@ -192,11 +192,11 @@ Dialog.create("Step 3 of 4  –  Threshold & Particle Analysis");
 Dialog.addMessage(
     "Set the threshold method for each channel.\n" +
     "'Manual (interactive)' is only available in Single mode.");
-Dialog.addMessage("────  " + ch_a_lbl + "  ──────────────────────────");
+Dialog.addMessage("----  " + ch_a_lbl + "  ----");
 Dialog.addChoice("Threshold method:", thr_methods, g_thr1);
-Dialog.addMessage("────  " + ch_b_lbl + "  ──────────────────────────");
+Dialog.addMessage("----  " + ch_b_lbl + "  ----");
 Dialog.addChoice("Threshold method:", thr_methods, g_thr2);
-Dialog.addMessage("────  Particle Analysis  (on colocalization mask)  ─");
+Dialog.addMessage("----  Particle Analysis  (on colocalization mask)  ----");
 Dialog.addNumber("Minimum object area (px2):", g_min_area);
 Dialog.addNumber("Maximum object area (px2):", g_max_area);
 Dialog.addCheckbox("Exclude objects touching image edges", g_excl_edges);
@@ -341,7 +341,7 @@ if (!isBatch) {
         "Avg. intensity Ch B  : " + d2s(res_avg_chB, 2)            + "\n \n" +
         "Settings saved for reuse in batch mode.\n" +
         "Output folder: " + output_dir                             + "\n \n" +
-        "────────────────────────────────────────────────\n" +
+        "-----------------------------------------------\n" +
         "Thank you for using a Münster Imaging Network macro!\n" +
         "microscopy@uni-muenster.de  ·  uni.ms/imagingnetwork");
     Dialog.show();
@@ -448,14 +448,14 @@ if (!isBatch) {
 
     // ── Print batch summary ───────────────────────────────────────────
     print("");
-    print("═══════════════════════════════════════════════");
+    print("-----------------------------------------------");
     print("   BATCH COMPLETE");
-    print("═══════════════════════════════════════════════");
+    print("-----------------------------------------------");
     print("  Total files    : " + n_total);
     print("  Processed OK   : " + n_ok);
     print("  Skipped/Failed : " + n_skip);
     print("  Output folder  : " + output_dir);
-    print("═══════════════════════════════════════════════");
+    print("-----------------------------------------------");
 
     // ── Save batch log ────────────────────────────────────────────────
     saveLog(output_dir + "Batch");
@@ -467,7 +467,7 @@ if (!isBatch) {
         "Files processed : " + n_ok + " of " + n_total + "\n" +
         "Skipped/Failed  : " + n_skip                   + "\n \n" +
         "Output folder:\n" + output_dir                 + "\n \n" +
-        "────────────────────────────────────────────────\n" +
+        "-----------------------------------------------\n" +
         "Thank you for using a Münster Imaging Network macro!\n" +
         "microscopy@uni-muenster.de  ·  uni.ms/imagingnetwork");
     Dialog.show();
