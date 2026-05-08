@@ -1,4 +1,4 @@
-# Tile Stitching & Hyperstack Macro
+# Processing and Tile Stitching Macro
 **Version 1.0 · Münster Imaging Network – Microscopy**
 
 A Fiji/ImageJ macro for automated tile processing and stitching of multi-channel z-stack OME-TIFF acquisitions from Imspector (LVBT).
